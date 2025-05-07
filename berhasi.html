@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pesanan Berhasil</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0fff0;
+    }
+    h1 {
+      color: rgb(204, 113, 128) ;
+    }
+    p {
+      font-size: 18px;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      border: 2px solid #e84393;;
+      background-color: ;
+    }
+  </style>
+    
+</head>
+<body>
+  
+  <h1>✅ Pesanan Anda Berhasil Dikirim!</h1>
+
+  <!-- Kanvas menyatu dengan bagian konten -->
+  <canvas id="pesananCanvas" width="400" height="50">
+    Browser Anda tidak mendukung elemen canvas.
+  </canvas>
+
+  <h2>Pemesanan Atas:</h2>
+  <p>DIANA ANDARA</p>
+  <P>Alamat: INDRALAYA INDAH</P>
+  <P>No HP: 083189272703</P>
+  <P>EMAIL: ABC@gmail.com</P>
+  <p><strong>Metode Pembayaran:</strong> COD</p>
+ 
+  <a href="index.html" class="btn">⬅️ Kembali ke Beranda</a>
+
+  <script>
+    const canvas = document.getElementById('pesananCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Menggambar ikon centang di kanvas
+    ctx.fillStyle = "pink";
+    ctx.font = "bold 22px Arial";
+    ctx.fillText("✔️ Terima kasih atas pesanan Anda!", 10, 30);
+  </script>
+    
+</body>
+</html>
